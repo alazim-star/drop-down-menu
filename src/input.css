@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image:url(/Image/laptop-wooden-table-dark-work-from-home-concept_1142-45739.jpg);
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.manubar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.manubar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
+
+}
+.active,.manubar ul li:hover
+ {
+    background:#1e9605;
+    border-radius: 3px ;
+
+
+}
+.manubar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+
+
+
+}
+.manubar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:#005400 ;
+    margin-top:15px ;
+    margin-left: -15px;
+
+}
+.manubar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.manubar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.manubar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+
+} 
+.manubar ul li:hover .sub-menu-1 ul li a:hover{
+    color:#1e9605;
+} 
+.sub-menu-2{
+    display: none;
+   
+
+}
+
+.fa-chevron-right{
+    float: right;
+
+
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: #005400;
+    color:white
+
+}
